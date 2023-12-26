@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: rgb(239, 237, 238);
+    background: linear-gradient(116deg, rgba(239, 237, 238, 1) 0%, rgba(42, 28, 15, 1) 76%, rgba(244, 201, 50, 1) 98%);
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #ffe073;
+    color: #492b10;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 5px 20px;
+}
+
+nav img {
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: rgb(200, 192, 248);
+    text-decoration: underline;
+}
+
+.mid {
+    background: rgb(239, 237, 238);
+    background: linear-gradient(116deg, rgba(239, 237, 238, 1) 0%, rgba(42, 28, 15, 1) 76%, rgba(244, 201, 50, 1) 98%);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    padding: 50px 0;
+    margin: 30px auto;
+}
+
+.mid img {
+    height: 400px;
+    -webkit-animation: myanimation 4s infinite;
+}
+
+.mid h3,
+.mid h5,
+.mid p {
+    font-size: 40px;
+    color: rgba(244, 201, 50, 1);
+}
+
+.mid p {
+    color: #FFE6D9;
+}
+
+.spot {
+    background: rgb(222, 203, 164);
+    background: linear-gradient(180deg, rgba(222, 203, 164, 1) 0%, rgba(62, 81, 81, 1) 100%);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    padding: 50px 0;
+    margin: 30px auto;
+}
+
+.spot img {
+    position: absolute;
+    right: 10%;
+    border-radius: 10px;
+}
+
+.spot h1,
+h2 {
+    font-size: 50px;
+}
+
+.spot p {
+    width: 500px;
+    font-size: 30px;
+}
+
+.tint {
+    width: 50%;
+    background-color: #d4b398;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 0 50px black;
+    margin: 0 auto;
+}
+
+.model {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(222, 203, 164);
+    background: linear-gradient(180deg, rgba(222, 203, 164, 1) 0%, rgba(62, 81, 81, 1) 100%);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.premier {
+    display: flex;
+    width: 70%;
+    gap: 30px;
+}
+
+.premier h1 {
+    font-size: 40px;
+    color: #faf590;
+}
+
+.premier p {
+    font-size: 25px;
+}
+
+.singers {
+    display: flex;
+    width: 60%;
+    gap: 60px;
+    padding: 40px;
+}
+
+.singers img {
+    border-radius: 10px;
+}
+
+.singer h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+    color: #faf590;
+}
+
+h2 {
+    color: #faf590;
+}
+
+.social {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    width: 430px;
+    color: #fff63a;
+    gap: 30px;
+}
+
+.lists h2 {
+    flex-wrap: wrap;
+    font-size: 15px;
+    width: 360px;
+    color: #fff63a;
+}
+
+.lists img {
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: rgb(239, 237, 238);
+    background: linear-gradient(116deg, rgba(239, 237, 238, 1) 0%, rgba(42, 28, 15, 1) 76%, rgba(244, 201, 50, 1) 98%);
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #ffe073;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer img {
+    border-radius: 10px;
+}
+
+@media (max-width:1200px) {
+    .mid img {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+@media (max-width:700px) {
+    .mid {
+        flex-direction: column;
+    }
+
+    .mid img {
+        width: 70%;
+        height: 70%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav img {
+        margin: 20px auto;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:1200px) {
+    .spot {
+        gap: 50px;
+    }
+
+    .spot img {
+        width: 30%;
+        height: 400px;
+    }
+
+    .tint p {
+        width: 60%;
+
+    }
+
+    .tint h1,
+    .tint h2 {
+        width: 60%;
+    }
+}
+
+@media (max-width:800px) {
+    .tint {
+        width: 400px;
+    }
+
+    .spot img {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@keyframes myanimation {
+    0% {
+        box-shadow: 0 0 15px #912aff;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #94bbe9;
+    }
+
+    100% {
+        box-shadow: 0 0 25px #eeaeca;
+    }
+}
